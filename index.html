@@ -80,6 +80,14 @@
                 sendMessage();
             }
         });
+
+            // ✅ 初始欢迎消息
+        window.onload = () => {
+            const welcomeMessage = document.createElement("div");
+            welcomeMessage.className = "message chatbot";
+            welcomeMessage.innerHTML = `<p>Hello, I am the AI assistant of University of Technology Sarawak (UTS). I am here to help you with programs, tuition fees, admissions and more!</p>`;
+            chatBox.appendChild(welcomeMessage);
+        };
     </script>
 </body>
 </html>
