@@ -61,3 +61,22 @@ button:hover {
     font-style: italic; 
     color: gray; 
 }
+
+.message.chatbot {
+    justify-content: flex-start;
+    position: relative;
+    padding-left: 40px; /* 为头像预留空间 */
+}
+
+.message.chatbot::before {
+    content: "";
+    background-image: url('image.png');
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
