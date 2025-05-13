@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UTS Chatbot</title>
+    <title>UTSGPT - AI Chatbot for University of Technology Sarawak (UTS)</title>
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
@@ -41,7 +41,7 @@
             chatBox.scrollTop = chatBox.scrollHeight;
 
             // Send query to the server
-            fetch("https://d12e-175-138-69-49.ngrok-free.app/get_response", {
+            fetch("https://225a-175-138-69-49.ngrok-free.app/get_response", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ query }),
