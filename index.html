@@ -41,7 +41,7 @@
             chatBox.scrollTop = chatBox.scrollHeight;
 
             // Send query to the server
-            fetch("https://9910-175-138-68-53.ngrok-free.app/get_response", {
+            fetch("https://5f38-175-138-69-49.ngrok-free.app/get_response", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ query }),
@@ -81,7 +81,7 @@
             }
         });
 
-            // ✅ 初始欢迎消息
+            // ✅ Initial Welcome Message
         window.onload = () => {
             const welcomeMessage = document.createElement("div");
             welcomeMessage.className = "message chatbot";
